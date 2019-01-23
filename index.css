@@ -1,0 +1,54 @@
+* {
+  font-family: 'Cutive Mono', monospace;
+  color: #292929;
+}
+
+html {
+  /* background: linear-gradient(-23deg, #fefefe, #e3b5a5); */
+  background: #fdfbf7;
+  height: 100%;
+}
+
+body {
+  /* background: #fefefe; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+.box {
+  /* border: 1.3px dashed black; */
+  border: 1px dashed #e3b5a5;
+  box-shadow: 8px 8px #e3b5a5c7;
+  display: flex;
+  height: 80%;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.words-container {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.words {
+  font-size: 45px;
+  text-align: center;
+}
+.borderlines {
+  width: 100%;
+  position: absolute;
+  height: auto;
+}
+.secret {
+  opacity: 0;
+  font-size: 12px;
+  transition: opacity 0.2s ease-in;
+}
+
+.secret:hover {
+  opacity: 0.3;
+}
